@@ -65,15 +65,25 @@ When `quarto` compiles this document to HTML or PDF, the code is run, and the ou
 :::
 
 ```{r}
-# This reads the penguin.csv file and then creates a table based on the data inside. It will then create a summary of the data found within, creating a scatter plot. 
+library(tidyverse)
+penguins <- read_csv("data/penguins.csv") # This reads the csv file to the penguins variable.
+head(penguins) #This looks at the first 6 rows
+summary(penguins) #This gives a statistical summary of each column
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
+  geom_point() +
+  theme_minimal() #These lines create a scatter plot with the summary data
+
+#second plot
 library(tidyverse)
 penguins <- read_csv("data/penguins.csv")
 head(penguins)
 summary(penguins)
-ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = sex)) +
   geom_point() +
   theme_minimal()
 ```
+
+
 
 ### Tricks for Reproducibility
 
@@ -90,8 +100,8 @@ print("Hello world!")  # We can also add comments at the end of lines.
 ### Task 2 
 
 - [x] Add comments before each line of code in the blocks above, explaining what is happening on each line.
-- [ ] Add some interpretation of the plot (in `markdown`, not as comments), after the code block.
-- [ ] Create a second plot, below, that colours the dots by sex instead of by species.
+- [x] Add some interpretation of the plot (in `markdown`, not as comments), after the code block.
+- [x] Create a second plot, below, that colours the dots by sex instead of by species.
 
 If you don't know how to do something in `R` you have a few options:
 
