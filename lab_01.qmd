@@ -81,6 +81,20 @@ summary(penguins)
 ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = sex)) +
   geom_point() +
   theme_minimal()
+
+#third plot
+library(tidyverse)
+penguins <- read_csv("data/penguins.csv")
+head(penguins)
+summary(penguins)
+ggplot(penguins, aes(
+  x = flipper_length_mm,
+  y = body_mass_g,
+  color = species,
+  shape = sex
+)) +
+  geom_point() +
+  theme_minimal()
 ```
 
 
