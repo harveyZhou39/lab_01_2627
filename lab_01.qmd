@@ -125,9 +125,9 @@ If you don't know how to do something in `R` you have a few options:
 
 The next task asks you to *extend* what we have already done using new functionality of `ggplot`.
 
-- [ ] Create a third plot that uses colour for species and changes the *shape* of the points based on the sex.
-- [ ] Commit and push your solutions to GitHub with an informative message.
-- [ ] Make sure your changes are visible on GitHub.
+- [x] Create a third plot that uses colour for species and changes the *shape* of the points based on the sex.
+- [x] Commit and push your solutions to GitHub with an informative message.
+- [x] Make sure your changes are visible on GitHub.
 
 From now on I won't remind you to do this - you should get into the habit of doing it whenever you reach a natural point to commit!
 
