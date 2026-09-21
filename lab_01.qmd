@@ -65,6 +65,7 @@ When `quarto` compiles this document to HTML or PDF, the code is run, and the ou
 :::
 
 ```{r}
+# This reads the penguin.csv file and then creates a table based on the data inside. It will then create a summary of the data found within, creating a scatter plot. 
 library(tidyverse)
 penguins <- read_csv("data/penguins.csv")
 head(penguins)
@@ -88,7 +89,7 @@ print("Hello world!")  # We can also add comments at the end of lines.
 
 ### Task 2 
 
-- [ ] Add comments before each line of code in the blocks above, explaining what is happening on each line.
+- [x] Add comments before each line of code in the blocks above, explaining what is happening on each line.
 - [ ] Add some interpretation of the plot (in `markdown`, not as comments), after the code block.
 - [ ] Create a second plot, below, that colours the dots by sex instead of by species.
 
