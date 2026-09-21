@@ -40,9 +40,9 @@ Sometimes there will be areas for you to edit. These will have _marked_ text tha
 Hi, my name is [Harvey]{.mark}.
 :::
 
-- [ ] Knit the document to check that the output looks okay.
-- [ ] Save, and push the output back up to GitHub. (Hint: see the instructions [here](https://soton-fds.github.io/github-tutorial.html))
-- [ ] Check that you can see the modified version in your personal GitHub repo.
+- [x] Knit the document to check that the output looks okay.
+- [x] Save, and push the output back up to GitHub. (Hint: see the instructions [here](https://soton-fds.github.io/github-tutorial.html))
+- [x] Check that you can see the modified version in your personal GitHub repo.
 
 ## Palmer Penguins in `R`
 
